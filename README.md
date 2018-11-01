@@ -46,6 +46,9 @@ And if 404, then the username doesn’t exist on that particular site .\\
  <a href="https://t.me/zigacomputerexperts">Ziga Computer Ezperts</a>
 <br>
 
+<a href="https://t.me/joinchat/F-HNDUmOMesC7CLRg6b3FQ">HackTheShell</a>
+<br>
+
 <a href="https://t.me/BugCrowd">BugCrowd</a>
 <br> 
 
@@ -54,5 +57,7 @@ And if 404, then the username doesn’t exist on that particular site .\\
 
 <a href="https://t.me/informationX">InformationX</a>
 <br>
+
+
 
 // 0_0 Don't forget to join groups \\
