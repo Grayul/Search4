@@ -12,7 +12,7 @@ How to install ?
 <br>
 ~ git clone https://github.com/7rillionaire/Search4
 <br>
-~ cd $HOME/Search4
+~ cd Search4
 <br>
 ~ bash setup.sh
 <br>
@@ -24,16 +24,12 @@ And ur done...!
 <br>
 # Enter users username without '@' symbol 
 <br>
-<br>
+
 # Short and Sweet Explanation 
 <br>
-
-A script that uses web servers response to check whether on a particular sites link it shows 404 or 200 response
-
+*A script that uses web servers response to check whether on a particular sites link it shows 404 or 200 response
 If it’s 200 then it means the site gave some information, it’s OK. That means the username om the site exits.
-
 And if 404, then the username doesn’t exist on that particular site .
-
 <br>
 <br>
 <br>
@@ -59,4 +55,4 @@ And if 404, then the username doesn’t exist on that particular site .
 <a href="https://t.me/informationX">InformationX</a>
 <br>
 
-# 0_0 Don't forget to join groups .
+*0_0 Don't forget to join groups .
