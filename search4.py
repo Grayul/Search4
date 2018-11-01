@@ -37,7 +37,7 @@ elif gitres == 404:
 
 print("\n \n")
 twitter = requests.get('https://twitter.com/'+username)
-twitterres = (git.status_code)
+twitterres = (twitter.status_code)
 twitteraddress = ("https://twitter.com/"+username)
 json_response = (twitter.json)
 
@@ -272,3 +272,11 @@ else:
 print("\n \n")
 print("DONE..! \n ")
 print("Use ctrl+c to exit")
+print("\n \n")
+exit = input("Want to exit script or continue yes or no? : ")
+if exit == "yes":
+        os.system("exit()")
+elif exit == "no":
+        os.system("python Search4.py")
+else :
+        print("Enter yes or no only")
