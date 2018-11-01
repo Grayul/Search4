@@ -4,7 +4,7 @@
 <a href="https://github.com/7rillionaire/Search4/"><img src="https://image.ibb.co/n61DiL/Screenshot-2018-11-01-12-01-40-1.png" alt="Screenshot-2018-11-01-12-01-40-1" border="0"></a>
 <br>
 <br>
-How to install ?
+___How to install ?___
 <br>
 <br>
 
@@ -29,7 +29,7 @@ And ur done...!
 <br>
 *A script that uses web servers response to check whether on a particular sites link it shows 404 or 200 response
 If it’s 200 then it means the site gave some information, it’s OK. That means the username om the site exits.
-And if 404, then the username doesn’t exist on that particular site .
+And if 404, then the username doesn’t exist on that particular site .*
 <br>
 <br>
 <br>
@@ -55,4 +55,4 @@ And if 404, then the username doesn’t exist on that particular site .
 <a href="https://t.me/informationX">InformationX</a>
 <br>
 
-*0_0 Don't forget to join groups .
+*0_0 Don't forget to join groups *.
