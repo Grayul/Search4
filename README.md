@@ -8,19 +8,14 @@ How to install ?
 <br>
 <br>
 
-cd $HOME
+~ cd $HOME
 <br>
-git clone https://github.com/7rillionaire/Search4
+~ git clone https://github.com/7rillionaire/Search4
 <br>
-cd $HOME/Search4
+~ cd $HOME/Search4
 <br>
-bash setup.sh
+~ bash setup.sh
 <br>
-cd Search4
-<br>
-chmod +x setup.sh
-<br>
-bash setup.sh
 
 And ur done...!
 
@@ -36,4 +31,34 @@ A script that uses web servers response to check whether on a particular sites l
 
 If it’s 200 then it means the site gave some information, it’s OK. That means the username om the site exits.
 
-And if 404, then the username doesn’t exist on that particular site
+And if 404, then the username doesn’t exist on that particular site .
+
+<br>
+
+<br>
+
+# Groups To Join On Telegram
+<br>
+
+<a href="https://t.me/joinchat/FY2amVKlBrBQIi3dT_lUug">Termux User</a>
+
+<br>
+
+<a href="https://t.me/termux_india">Termux India</a>
+<br>
+
+ <a href="https://t.me/zigacomputerexperts">Ziga Computer Ezperts</a>
+
+<br>
+
+<a href="https://t.me/BugCrowd">BugCrowd</a>
+
+<br> 
+
+<a href="https://t.me/AstroidX">Cyber_Healers</a>
+
+<br>
+
+<a href="https://t.me/informationX">InformationX</a>
+
+# 0_0 Don't forget to join groups ;}
