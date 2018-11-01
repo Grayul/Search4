@@ -28,7 +28,7 @@ And ur done...!
 # Short and Sweet Explanation 
 <br>
 // A script that uses web servers response to check whether on a particular sites link it shows 404 or 200 response
-If it’s 200 then it means the site gave some information, it’s OK. That means the username om the site exits.
+If it’s 200 then it means the site gave some information, it’s OK. That means the username on the site exits.
 And if 404, then the username doesn’t exist on that particular site .\\
 <br>
 <br>
