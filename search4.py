@@ -1,8 +1,21 @@
 #!/usr/bin/env python3
-import requests, json, sys, time, os
+import requests, json, sys, time
+requests.packages.urllib3.disable_warnings() 
+
+class color:
+    BLUE = '\033[94m'
+    RED = '\033[91m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    BOLD = '\033[1m'
+    END = '\033[0m'
+
+    @staticmethod
+    def log(lvl, col, msg):
+    	logger.log(lvl, col + msg + color.END)
 
 def banner():
-	print("""
+	print(color.BOLD + color.RED + """
 	                         _    _  _   
 	                        | |  | || |  
 	 ___  ___  __ _ _ __ ___| |__| || |_ 
@@ -12,70 +25,57 @@ def banner():
 	                                     
 	A script to find user accounts on various social platforms
 	by 7rillionaire and ZishanAdThandar
-		""")
+		""" + color.END)
 banner()
-username = input("Enter users username : ")
+username = input(color.BOLD + color.BLUE + "Enter users username : " + color.END)
 localtime = time.asctime( time.localtime(time.time()) )
-print("\nStarted at : {}\n" .format(localtime))
+print(color.BOLD + color.BLUE + "\nStarted at : {}\n" .format(localtime) + color.END)
 
 
 #link checker
 def result(url, site, username):
 	address = (url+username)
 	try:
-		headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
-		r = requests.get(address, headers=headers)
+		headers = {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:62.0) Gecko/20100101 Firefox/62.0"}
+		r = requests.get(address, headers=headers, verify=False)
 		if r.status_code == 200:
-			print("{} (VOILA)  : Account found on {}\n" .format(site, address))
-		else: print("{} : Account not found on {}\n" .format(site, address))
-	except: print("{} : Account not found on {}\n" .format(site, address))
+			print(color.BOLD + color.GREEN + "{} (VOILA)  : Account found on {}\n" .format(site, address) + color.END)
+		else: print(color.BOLD + color.YELLOW + "[!] {} : Account not found on {}\n" .format(site, address) + color.END)
+	except: print(color.BOLD + color.YELLOW + "[!] {} : Account not found on {}\n" .format(site, address) + color.END)
 
-result("https://github.com/", "Github", username) # Github
-result("https://twitter.com/", "Twitter", username) # Twitter
-result("https://www.youtube.com/c/", "YouTube", username) # YouTube
-result("https://plus.google.com/+", "Google+", username.lower()) # Google+
+print(color.BOLD + color.BLUE + "Social:\n" + color.END)
 result("https://www.facebook.com/", "facebook", username) # facebook
-result("https://www.instagram.com/", "Instagram", username+"/") # Instagram
-
-result("https://medium.com/@", "Medium", username) # Medium
-result("https://www.reddit.com/r/", "Reddit", username) # Reddit
-# Telegram Indian Error 
-# Discord problem
-result("https://m.twitch.tv/", "Twitch", username) # Twitch
-# LinkedIn problem
-# flickr not found
-result("https://www.quora.com/profile/", "Quora", username) # Quora
-# my Space error
+result("https://twitter.com/", "Twitter", username) # Twitter
+result("https://plus.google.com/+", "Google+", username.lower()) # Google+
+result("https://t.me/", "Telegram", username) # Telegram
 result("https://m.vk.com/", "VK", username) # VK
-result("https://www.pinterest.com/", "Pinterest", username) # Pinterest
 # Snapchat error
-# stakoverflow it has a unique id plus username
+
+
+print(color.BOLD + color.BLUE + "Videos:\n" + color.END)
+result("https://www.youtube.com/c/", "YouTube", username) # YouTube
 result("https://vimeo.com/", "Vimeo", username) # Vimeo
+result("https://m.twitch.tv/", "Twitch", username) # Twitch
+
+print(color.BOLD + color.BLUE + "Photos:\n" + color.END)
+result("https://www.instagram.com/", "Instagram", username+"/") # Instagram
+result("https://www.pinterest.com/", "Pinterest", username) # Pinterest
+result("https://flickr.com/photos/", "Flickr", username.lower()) # Flickr
+result("https://", "Tumblr", username.lower()+".tumblr.com") # Tmblr
+
+print(color.BOLD + color.BLUE + "Blogs and forums:\n" + color.END)
+result("https://medium.com/@", "Medium", username) # Medium
+result("https://myspace.com/", "Myspace", username.lower()) # MySpace
+result("https://www.reddit.com/r/", "Reddit", username) # Reddit
+result("https://www.quora.com/profile/", "Quora", username) # Quora
+# Discord problem
+
+print(color.BOLD + color.BLUE + "Professional:\n" + color.END)
+result("https://github.com/", "Github", username) # Github
+#result("https://www.linkedin.com/in/", "LinkedIn", username.lower()+"/") # LinkedIn http2/ 999
 result("https://hackerone.com/", "Hackerone", username.lower()) # hackerone
 result("https://BugCrowd.com/", "BugCrowd", username) # BugCrowd
-"""
-# Tumblr
-tumblr = requests.get(f"https://{username.lower()}.tumblr.com")
-tumblrres = (tumblr.status_code)
-tumblraddress = (f"https://{username.lower()}.tumblr.com")
-json_response = (tumblr.json)
+result("https://www.fiverr.com/", "Fiverr", username) # Fiberr
+# stakoverflow it has a unique id plus username
 
-if tumblrres == 200:
-	if json_response == 'Account not found ':
-		print("Tumblr : Account not found on {}" .format(tumblradress))
-	else:
-		print("Tumblr (VOILA) : Account found on {}" .format(tumblraddress))
-else:
-	print("Tumblr (404) : Error page not found")
-"""
-print("\n \n")
-print("DONE..! \n ")
-print("Use ctrl+c to exit")
-print("\n \n")
-exit = input("Want to exit script or continue? [y/n] :")
-if exit == "y":
-        os.system("exit()")
-elif exit == "n":
-        os.system("python Search4.py")
-else :
-        print("Enter y or n only")
+print(color.BOLD + color.BLUE + "\n\nDONE..! \n\n" + color.END)
