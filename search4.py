@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import requests, json, sys, time
+import requests, json, sys, time, argparse
 requests.packages.urllib3.disable_warnings() 
 
 class color:
@@ -23,11 +23,28 @@ def banner():
 	\__ \  __/ (_| | | | (__| | | | | |  
 	|___/\___|\__,_|_|  \___|_| |_| |_|  
 	                                     
+	version 0.9.0
 	A script to find user accounts on various social platforms
 	by 7rillionaire and ZishanAdThandar
 		""" + color.END)
 banner()
-username = input(color.BOLD + color.BLUE + "Enter users username : " + color.END)
+
+parser = argparse.ArgumentParser(description='Search user on different sites.')
+parser.add_argument('-v', "--version", help='Shows version number.', action="store_true")
+parser.add_argument('-u', '--username', help='Search for the given username.')
+
+args = parser.parse_args()
+
+if args.username:
+	username = (args.username)
+	print(color.BOLD + color.BLUE + "Given username is {}".format(username) + color.END)
+elif args.version:
+	username = (args.username)
+	print(color.BOLD + color.BLUE + "Verion 9.0" + color.END)
+	quit()
+else:
+	print(color.BOLD + color.BLUE + "{} -h for helps".format(sys.argv[0]) + color.END)
+	quit()
 localtime = time.asctime( time.localtime(time.time()) )
 print(color.BOLD + color.BLUE + "\nStarted at : {}\n" .format(localtime) + color.END)
 
