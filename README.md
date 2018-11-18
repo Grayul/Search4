@@ -1,7 +1,7 @@
 # Search4
 <br>
 <br>
-<a href="https://github.com/7rillionaire/Search4/"><img src="https://image.ibb.co/n61DiL/Screenshot-2018-11-01-12-01-40-1.png" alt="Screenshot-2018-11-01-12-01-40-1" border="0"></a>
+<a href="https://asciinema.org/a/0yf6Vrgm5PBwrdGPdhWEHPETN" target="_blank"><img src="https://asciinema.org/a/0yf6Vrgm5PBwrdGPdhWEHPETN.svg" /></a>
 <br>
 <br>
 ___ How to install ¿ ___
