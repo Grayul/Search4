@@ -2,22 +2,18 @@ RED="\033[31m"
 YELLOW="\033[33m"
 BLUE='\033[1;34m'
 
-echo Installing requirements ...
 
-apt update -y
-apt upgrade -y
-pkg install python -y
-pip install --upgrade pip
-pip install requests
-pkg install figlet 
-pkg install toilet
-
+echo -e $RED Installing required python modules
+sudo pip install json
+sudo pip install sys
+sudo pip install time
+sudo pip install argparse
+sudo pip install requests
 clear
 sleep 0 
 
 echo -e $YELLOW  Author : 
 echo -e $BLUE github.com/7rillionaire
-
 
 echo
 echo -e $RED ■■■■■■■■■■■■■■■■■■■
@@ -32,6 +28,6 @@ echo -e $BLUE https://t.me/trilli0n4ir3
 echo
 
 sleep 2 
-cd $HOME/Search4
-chmod +x search4.py
-echo use python search4.py to run the script.
+sudo chmod +x search4.py
+sudo cp search4.py /user/bin/search4
+echo -e $YELLOW use search4 coomand on the terminal to use the tool.
