@@ -89,6 +89,7 @@ result("https://www.quora.com/profile/", "Quora", username) # Quora
 
 print(color.BOLD + color.BLUE + "Professional:\n" + color.END)
 result("https://github.com/", "Github", username) # Github
+result("https://gitlab.com/", "Gitlab", username) # Gitlab
 #result("https://www.linkedin.com/in/", "LinkedIn", username.lower()+"/") # LinkedIn http2/ 999
 result("https://hackerone.com/", "Hackerone", username.lower()) # hackerone
 result("https://BugCrowd.com/", "BugCrowd", username) # BugCrowd
