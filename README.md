@@ -69,6 +69,9 @@ chmod +X termux.sh
 <b>● Usage</b>
 <br>
 <br>
+<a href="https://asciinema.org/a/0yf6Vrgm5PBwrdGPdhWEHPETN" target="_blank"><img src="https://asciinema.org/a/0yf6Vrgm5PBwrdGPdhWEHPETN.svg" /></a>
+<br>
+<br>
 <code>
 python search4.py -u username
 </code>
