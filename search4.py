@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-import requests, json, sys, time, argparse, datetime
+import requests, json, sys, time, argparse
+from datetime import datetime
 startTime = datetime.now()
 requests.packages.urllib3.disable_warnings() 
 
@@ -47,8 +48,8 @@ elif args.version:
 else:
 	print(color.BOLD + color.BLUE + "{} -h for helps".format(sys.argv[0]) + color.END)
 	quit()
-starttime = time.asctime( time.localtime(time.time()) )
-print(color.BOLD + color.BLUE + "\nStarted at : {}\n" .format(starttime) + color.END)
+localtime = time.asctime( time.localtime(time.time()) )
+print(color.BOLD + color.BLUE + "\nStarted at : {}\n" .format(localtime) + color.END)
 
 
 #link checker
