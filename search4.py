@@ -3,6 +3,7 @@ import requests, json, sys, time, argparse, datetime
 startTime = datetime.now()
 requests.packages.urllib3.disable_warnings() 
 
+
 class color:
     BLUE = '\033[94m'
     RED = '\033[91m'
@@ -17,13 +18,13 @@ class color:
 
 def banner():
 	print(color.BOLD + color.RED + """
-	                         _    _  _   
-	                        | |  | || |  
-	 ___  ___  __ _ _ __ ___| |__| || |_ 
+	                         _    _  _
+	                        | |  | || |
+	 ___  ___  __ _ _ __ ___| |__| || |_
 	/ __|/ _ \/ _` | '__/ __| '_ \__   _|
-	\__ \  __/ (_| | | | (__| | | | | |  
-	|___/\___|\__,_|_|  \___|_| |_| |_|  
-	                                     
+	\__ \  __/ (_| | | | (__| | | | | |
+	|___/\___|\__,_|_|  \___|_| |_| |_|
+
 	version 0.9.0
 	A script to find user accounts on various social platforms
 	by 7rillionaire and ZishanAdThandar
