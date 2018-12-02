@@ -45,8 +45,8 @@ elif args.version:
 else:
 	print(color.BOLD + color.BLUE + "{} -h for helps".format(sys.argv[0]) + color.END)
 	quit()
-localtime = time.asctime( time.localtime(time.time()) )
-print(color.BOLD + color.BLUE + "\nStarted at : {}\n" .format(localtime) + color.END)
+starttime = time.asctime( time.localtime(time.time()) )
+print(color.BOLD + color.BLUE + "\nStarted at : {}\n" .format(starttime) + color.END)
 
 
 #link checker
@@ -64,7 +64,7 @@ print(color.BOLD + color.BLUE + "Social:\n" + color.END)
 result("https://www.facebook.com/", "facebook", username) # facebook
 result("https://twitter.com/", "Twitter", username) # Twitter
 result("https://plus.google.com/+", "Google+", username.lower()) # Google+
-result("https://t.me/", "Telegram", username) # Telegram
+# result("https://t.me/", "Telegram", username) # Telegram showing 200 for non existing account
 result("https://m.vk.com/", "VK", username) # VK
 # Snapchat error
 
@@ -89,12 +89,14 @@ result("https://www.quora.com/profile/", "Quora", username) # Quora
 
 print(color.BOLD + color.BLUE + "Professional:\n" + color.END)
 result("https://github.com/", "Github", username) # Github
-result("https://gitlab.com/", "Gitlab", username) # Gitlab
+#result("https://gitlab.com/", "Gitlab", username) # Gitlab 200 for non-existing account
 #result("https://www.linkedin.com/in/", "LinkedIn", username.lower()+"/") # LinkedIn http2/ 999
 result("https://hackerone.com/", "Hackerone", username.lower()) # hackerone
 result("https://www.paypal.me/", "PayPal", username.lower()) # hackerone
 result("https://BugCrowd.com/", "BugCrowd", username) # BugCrowd
-result("https://www.fiverr.com/", "Fiverr", username) # Fiberr
+# result("https://www.fiverr.com/", "Fiverr", username) # Fiberr
 # stakoverflow it has a unique id plus username
 
+completetime = time.asctime( time.localtime(time.time()) - starttime )
+print(color.BOLD + color.BLUE + "\nExecution Time : {}\n" .format(completetime) + color.END)
 print(color.BOLD + color.BLUE + "\n\nDONE..! \n\n" + color.END)
