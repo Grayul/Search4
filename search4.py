@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-import requests 
-import json
-import sys
-import time
-import argparse
-requests.packages.urllib3.disable_warnings()
+import requests, json, sys, time, argparse
+from datetime import datetime
+startTime = datetime.now()
+requests.packages.urllib3.disable_warnings() 
+
 
 class color:
     BLUE = '\033[94m'
@@ -49,8 +48,8 @@ elif args.version:
 else:
 	print(color.BOLD + color.BLUE + "{} -h for helps".format(sys.argv[0]) + color.END)
 	quit()
-starttime = time.asctime( time.localtime(time.time()) )
-print(color.BOLD + color.BLUE + "\nStarted at : {}\n" .format(starttime) + color.END)
+localtime = time.asctime( time.localtime(time.time()) )
+print(color.BOLD + color.BLUE + "\nStarted at : {}\n" .format(localtime) + color.END)
 
 
 #link checker
@@ -100,7 +99,7 @@ result("https://www.paypal.me/", "PayPal", username.lower()) # hackerone
 result("https://BugCrowd.com/", "BugCrowd", username) # BugCrowd
 # result("https://www.fiverr.com/", "Fiverr", username) # Fiberr
 # stakoverflow it has a unique id plus username
-
-completetime = time.asctime( time.localtime(time.time()) - starttime )
+completetime = datetime.now() - startTime
 print(color.BOLD + color.BLUE + "\nExecution Time : {}\n" .format(completetime) + color.END)
-print(color.BOLD + color.BLUE + "\n\nDONE..! \n\n" + color.END)
+print(color.BOLD + color.BLUE + "DONE..! \n" + color.END)
+ 
