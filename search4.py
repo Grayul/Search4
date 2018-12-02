@@ -101,5 +101,5 @@ result("https://BugCrowd.com/", "BugCrowd", username) # BugCrowd
 # stakoverflow it has a unique id plus username
 completetime = datetime.now() - startTime
 print(color.BOLD + color.BLUE + "\nExecution Time : {}\n" .format(completetime) + color.END)
-print(color.BOLD + color.BLUE + "\n\nDONE..! \n\n" + color.END)
+print(color.BOLD + color.BLUE + "DONE..! \n" + color.END)
  
