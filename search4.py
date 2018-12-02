@@ -97,7 +97,6 @@ result("https://www.paypal.me/", "PayPal", username.lower()) # hackerone
 result("https://BugCrowd.com/", "BugCrowd", username) # BugCrowd
 # result("https://www.fiverr.com/", "Fiverr", username) # Fiberr
 # stakoverflow it has a unique id plus username
-
-completetime = time.asctime( datetime.now() - startTime )
+completetime = datetime.now() - startTime
 print(color.BOLD + color.BLUE + "\nExecution Time : {}\n" .format(completetime) + color.END)
 print(color.BOLD + color.BLUE + "\n\nDONE..! \n\n" + color.END)
