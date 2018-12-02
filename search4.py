@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-import requests, json, sys, time, argparse
+import requests, json, sys, time, argparse, datetime
+startTime = datetime.now()
 requests.packages.urllib3.disable_warnings() 
 
 class color:
@@ -97,6 +98,6 @@ result("https://BugCrowd.com/", "BugCrowd", username) # BugCrowd
 # result("https://www.fiverr.com/", "Fiverr", username) # Fiberr
 # stakoverflow it has a unique id plus username
 
-completetime = time.asctime( time.localtime(time.time()) - starttime )
+completetime = time.asctime( datetime.now() - startTime )
 print(color.BOLD + color.BLUE + "\nExecution Time : {}\n" .format(completetime) + color.END)
 print(color.BOLD + color.BLUE + "\n\nDONE..! \n\n" + color.END)
