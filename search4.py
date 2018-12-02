@@ -102,3 +102,4 @@ result("https://BugCrowd.com/", "BugCrowd", username) # BugCrowd
 completetime = datetime.now() - startTime
 print(color.BOLD + color.BLUE + "\nExecution Time : {}\n" .format(completetime) + color.END)
 print(color.BOLD + color.BLUE + "\n\nDONE..! \n\n" + color.END)
+ 
