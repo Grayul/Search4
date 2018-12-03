@@ -28,7 +28,7 @@ cd Search4
 <br>
 <br>
 <code>
-chmod +X linux.sh
+chmod +x linux.sh
 </code>
 <br>
 <br>
@@ -55,7 +55,7 @@ cd Search4
 <br>
 <br>
 <code>
-chmod +X termux.sh
+chmod +x termux.sh
 </code>
 <br>
 <br>
