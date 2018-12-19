@@ -63,21 +63,23 @@ def result(url, site, username):
 		else: print(color.BOLD + color.YELLOW + "[!] {} : Account not found on {}\n" .format(site, address) + color.END)
 	except: print(color.BOLD + color.YELLOW + "[!] {} : Account not found on {}\n" .format(site, address) + color.END)
 
-print(color.BOLD + color.BLUE + "Social:\n" + color.END)
+print(color.BOLD + color.BLUE + "Social sites:\n" + color.END)
 result("https://www.facebook.com/", "facebook", username) # facebook
 result("https://twitter.com/", "Twitter", username) # Twitter
 result("https://plus.google.com/+", "Google+", username.lower()) # Google+
 # result("https://t.me/", "Telegram", username) # Telegram showing 200 for non existing account
 result("https://m.vk.com/", "VK", username) # VK
+result("http://kik.me/" ,"kik" , username.lower()) #kik
 # Snapchat error
 
 
-print(color.BOLD + color.BLUE + "Videos:\n" + color.END)
+print(color.BOLD + color.BLUE + "Video platforms:\n" + color.END)
 result("https://www.youtube.com/c/", "YouTube", username) # YouTube
 result("https://vimeo.com/", "Vimeo", username) # Vimeo
 result("https://m.twitch.tv/", "Twitch", username) # Twitch
+result("https://steamcommunity.com/id","steam", username) #steam
 
-print(color.BOLD + color.BLUE + "Photos:\n" + color.END)
+print(color.BOLD + color.BLUE + "Photo platforms:\n" + color.END)
 result("https://www.instagram.com/", "Instagram", username+"/") # Instagram
 result("https://www.pinterest.com/", "Pinterest", username) # Pinterest
 result("https://flickr.com/photos/", "Flickr", username.lower()) # Flickr
@@ -90,15 +92,17 @@ result("https://www.reddit.com/r/", "Reddit", username) # Reddit
 result("https://www.quora.com/profile/", "Quora", username) # Quora
 # Discord problem
 
-print(color.BOLD + color.BLUE + "Professional:\n" + color.END)
+print(color.BOLD + color.BLUE + "Professional platform:\n" + color.END)
 result("https://github.com/", "Github", username) # Github
 #result("https://gitlab.com/", "Gitlab", username) # Gitlab 200 for non-existing account
 #result("https://www.linkedin.com/in/", "LinkedIn", username.lower()+"/") # LinkedIn http2/ 999
 result("https://hackerone.com/", "Hackerone", username.lower()) # hackerone
 result("https://www.paypal.me/", "PayPal", username.lower()) # hackerone
 result("https://BugCrowd.com/", "BugCrowd", username) # BugCrowd
-# result("https://www.fiverr.com/", "Fiverr", username) # Fiberr
+result("https://about.me/" ,"about me ", username.lower()) # aboutme
+# result("https://www.fiverr.com/", "Fiverr", username) # Fiberr #error
 # stakoverflow it has a unique id plus username
+
 completetime = datetime.now() - startTime
 print(color.BOLD + color.BLUE + "\nExecution Time : {}\n" .format(completetime) + color.END)
 print(color.BOLD + color.BLUE + "DONE..! \n" + color.END)
