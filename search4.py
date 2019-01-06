@@ -57,7 +57,7 @@ def result(url, site, username):
 	address = (url+username)
 	try:
 		headers = {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:62.0) Gecko/20100101 Firefox/62.0"}
-		r = requests.get(address, headers=headers, verify=False)
+		r = requests.get(address, headers=headers, verify=False, allow_redirects=False)
 		if r.status_code == 200:
 			print(color.BOLD + color.GREEN + "{} (VOILA)  : Account found on {}\n" .format(site, address) + color.END)
 		else: print(color.BOLD + color.YELLOW + "[!] {} : Account not found on {}\n" .format(site, address) + color.END)
@@ -67,10 +67,9 @@ print(color.BOLD + color.BLUE + "Social sites:\n" + color.END)
 result("https://www.facebook.com/", "facebook", username) # facebook
 result("https://twitter.com/", "Twitter", username) # Twitter
 result("https://plus.google.com/+", "Google+", username.lower()) # Google+
-# result("https://t.me/", "Telegram", username) # Telegram showing 200 for non existing account
+# result("https://t.me/", "Telegram", username) # Telegram showing 200 for non existing account (in india) will solve soon
 result("https://m.vk.com/", "VK", username) # VK
-result("http://kik.me/" ,"kik" , username.lower()) #kik
-# Snapchat error
+# Snapchat error `\O.o/`
 
 
 print(color.BOLD + color.BLUE + "Video platforms:\n" + color.END)
@@ -94,10 +93,10 @@ result("https://www.quora.com/profile/", "Quora", username) # Quora
 
 print(color.BOLD + color.BLUE + "Professional platform:\n" + color.END)
 result("https://github.com/", "Github", username) # Github
-#result("https://gitlab.com/", "Gitlab", username) # Gitlab 200 for non-existing account
-#result("https://www.linkedin.com/in/", "LinkedIn", username.lower()+"/") # LinkedIn http2/ 999
+# result("https://gitlab.com/", "Gitlab", username) # Gitlab 200 for non-existing account
+# result("https://www.linkedin.com/in/", "LinkedIn", username.lower()+"/") # LinkedIn http2/ 999
 result("https://hackerone.com/", "Hackerone", username.lower()) # hackerone
-result("https://www.paypal.me/", "PayPal", username.lower()) # hackerone
+# result("https://www.paypal.me/", "PayPal", username.lower()) # has special page for non existing accounts `\O.o/`
 result("https://BugCrowd.com/", "BugCrowd", username) # BugCrowd
 result("https://about.me/" ,"about me ", username.lower()) # aboutme
 # result("https://www.fiverr.com/", "Fiverr", username) # Fiberr #error
