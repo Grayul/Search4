@@ -1,95 +1,103 @@
 <a href="https://github.com/7rillionaire/Search4"><img src="https://i.ibb.co/TWvY84p/Pics-Art-12-01-03-29-17-1.png" alt="logo"></a>
 
+<br> 
+<hr>  
 <br>
-<hr>
-<br>
-<br>
-
 <b>Q. What's this ?</b>
-<br>
-<i> >>> A tool to search a particular username on almost every social platform and tell , whether the user with that username exists on that sites or not </i>
+<i> >>> A tool to search a particular username on almost every social platform and tell , whether the user with that username exists on that sites or not.
+</i> 
 
 <hr>
+<br>
 <b>● Installation</b>
 <br>
 <br>
+<img src="https://i.ibb.co/NLPFMW2/Pics-Art-12-01-03-40-15-1.jpg" alt="Linux installation"> 
+
+<br> 
 
 
-<img src="https://i.ibb.co/NLPFMW2/Pics-Art-12-01-03-40-15-1.jpg" alt="Linux installation">
-<br>
-<code>
-git clone https://github.com/7rillionaire/Search4 
-</code>
-<br>
-<br>
-<code>
-cd Search4
-</code>
-<br>
-<br>
-<code>
-chmod +x linux.sh
-</code>
-<br>
-<br>
-<code>
-./linux.sh
-</code>
-
-<br>
-<br>
-
-<hr>
-
-<br>
-<img src="https://i.ibb.co/LSTxXBc/Pics-Art-12-01-03-40-15-3.jpg" alt="Termux installation">
-<br>
-<code>
+ ```
 git clone https://github.com/7rillionaire/Search4
-</code>
-<br>
-<br>
-<code>
+
 cd Search4
-</code>
+
+chmod +x linux.sh
+
+./linux.sh
+
+```
+
 <br>
 <br>
-<code>
+
+<img src="https://i.ibb.co/LSTxXBc/Pics-Art-12-01-03-40-15-3.jpg" alt="Termux installation">
+
+<br> 
+
+```
+git clone https://github.com/7rillionaire/Search4
+
+cd Search4
+
 chmod +x termux.sh
-</code>
-<br>
-<br>
-<code>
+
 ./termux.sh
-</code>
 
-<br>
-<hr>
-<br>
+```
+<hr> 
+
+<br> 
 <b>● Usage</b>
-<br>
-<br>
+<br> <br> 
+
+
 <a href="https://asciinema.org/a/0yf6Vrgm5PBwrdGPdhWEHPETN" target="_blank"><img src="https://asciinema.org/a/0yf6Vrgm5PBwrdGPdhWEHPETN.svg" /></a>
+
+<br> 
+<br> 
+<code> python search4.py -u username </code> 
+
 <br>
+<br> 
+
+<hr> 
+
+<b>● How it's working</b> 
+
 <br>
-<code>
-python search4.py -u username
-</code>
+<br> 
+
+This is a script made in python, that uses web servers [response](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) check whether on a particular sites link , when giving a search parameter with a value, it gives 404 or 200 response . If it gives 200 then it means the site has the particular user . And if 404 or any bad response then it means the username doesn’t exist on that particular site.
+
+
+<br> 
+<br>
+<hr> 
+<br> 
+<i>
+
+## Contribution ;
+
+<i> Help us making [Search4]( https://github.com/7rillionaire/Search4) more better . </i>
+
+~ [Zishan](https://github.com/ZishanAdThandar/) ; Beautifying the code
 
 <br>
 <br>
 <hr>
 
-<b>● How it's working</b>
+## TODO
+
+● Adding more websites
+
+● Solving issues with telegram (in India telegram is banned by some isp's ) , need permanent proxy or any other cool idea
+
+● Updating banner & changing output look 
+
+● Any suggestions / ideas for making it a lil faster?
+
 <br>
 <br>
 
-<i>This is a script made in python, that uses web servers response to check whether on a particular sites link , when giving a search parameter with a value, it gives 404 or 200 response . If it gives 200 then it means the site has the particular user . And if 404 or any bad response then it means the username doesn’t exist on that particular site. </i>
-
-<br>
-<br>
-
-<hr>
-
-<br>
-<i><b>~ Any ideas , suggestions,  errors , please feel free to share :] </i></b>
+<b>~ P;S have any ideas , suggestions, errors , please feel free to [share]( https://github.com/7rillionaire/Search4/issues) :] </i></b>
