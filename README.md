@@ -51,10 +51,6 @@ chmod +x termux.sh
 <b>● Usage</b>
 <br> <br> 
 
-
-<a href="https://asciinema.org/a/0yf6Vrgm5PBwrdGPdhWEHPETN" target="_blank"><img src="https://asciinema.org/a/0yf6Vrgm5PBwrdGPdhWEHPETN.svg" /></a>
-
-<br> 
 <br> 
 <code> python search4.py -u username </code> 
 
@@ -68,7 +64,7 @@ chmod +x termux.sh
 <br>
 <br> 
 
-This is a script made in python, that uses web servers [response](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) check whether on a particular sites link , when giving a search parameter with a value, it gives 404 or 200 response . If it gives 200 then it means the site has the particular user . And if 404 or any bad response then it means the username doesn’t exist on that particular site.
+This is a script made in python, that uses web servers [response](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status), to check whether on a particular sites url when given a parameter with a value, if it gives 404 or 200 response . If it gives 200 then it means the site has the particular user . And if 404 or any bad response then it means the username doesn’t exist on that particular site.
 
 
 <br> 
@@ -93,9 +89,7 @@ This is a script made in python, that uses web servers [response](https://develo
 
 ● Solving issues with telegram (in India telegram is banned by some isp's ) , need permanent proxy or any other cool idea
 
-● Updating banner & changing output look 
-
-● Any suggestions / ideas for making it a lil faster?
+● Updating banner & changing output look
 
 <br>
 <br>
